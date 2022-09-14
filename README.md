@@ -39,7 +39,6 @@ Your instructor will demonstrate this process for the first question.
 
 ### Q1
 What is the value of `result` after calling this function? Why?
-
 ```javascript
 function myFunction(num1, num2) {
   return num1+num2
@@ -47,6 +46,7 @@ function myFunction(num1, num2) {
 
 const result = myFunction(5,5)
 ```
+The code calls the myFunction function and passes two arguments, 5 and 5. The function adds these two numbers together and returns the result (10 in this case). The return value of the function is stored in the variable result - so when this code runs, the value of the result variable will be 10.
 
 ### Q2
 What is the value of `result` after calling this function? Why?
@@ -55,10 +55,11 @@ What is the value of `result` after calling this function? Why?
 function myFunction(num1, num2) {
   num1+num2
 }
-
+// line 56 should have return for this code to run correctly and return result as 10.
 const result = myFunction(5,5)
 ```
 
+This function is nearly idemtical to the one in Q1, passes same arguments. However, due to no "return" command in it the return will be underfined.
 ### Q3
 What is the value of `num` at the end of the program? Why?
 
@@ -71,9 +72,12 @@ let num = 10
 num = myFunction(num)
 num = myFunction(num)
 ``` 
+The code calls the myFunction function and passes one argument num 10. The function is decrising num by one each time it is called. End value of the return command will be 8, due to function called twice, and every time num has been decrised by 1.
 
 ### Q4
 What is the value of `add` and `num` at the end of the program? Why?
+
+ The code calls myFunction function and originaly passes two arguments num and add, however while calling the function num has been substituted with add. End value of add will be 1, due to function has been called twice (3-1-1=1). Value of num will not be changed to to not beeing used.
 
 ```javascript
 function myFunction(num) {
@@ -85,9 +89,10 @@ let add = 3
 add = myFunction(add)
 add = myFunction(add)
 ```
-
 ### Q5
 What value will be logged inside the function call? Why?
+
+The code calls myFunction function and passes two arguments num and num1. Due to this function does not have return command it should print whatever specifed inside in console.log(). However when this function has been called, only one argument has been used insted of two specified in the function. As a result function will return underfined.
 
 ```javascript
 function myFunction(num, num1) {
@@ -98,7 +103,7 @@ let num = 10
 let num1 = 2
 
 myFunction(num)
-
+The code calls myFunction function and originaly passes two arguments 
 ```
 
 ### Q6
@@ -114,6 +119,7 @@ let num1 = 2
 
 myFunction(num1, num)
 ```
+The code calls myFunction function and passes two arguments num and num1. Due to this function does not have return command it should print whatever specifed inside in console.log(). However while calling this function num and num1 have been swaped. as the result this function will return 10 insted of 2.
 
 ### Q7
 What will the value of counter be at the end of this program? Why?
@@ -129,7 +135,8 @@ function myFunction() {
 myFunction()
 const num = myFunction()
 ```
-
+The code calls myFunction function and has one variable counter with value 1. Every time this function called our value increases by one. Due to this function called twice, counter will show result as 3 at the end.
+ 
 ### Q8
 What will the value of `result` be at the end of this program? Why?
 
@@ -144,6 +151,7 @@ const num3 = 4
 
 const result = myFunction(num3, num1)
 ```
+The code calls myFunction function and passes two arguments. Howevew when we are calling this function we are substituting num1 to num3 and num2 to num1 . Result will show 14 (4 + 10)
 
 ### Q9
 What will be logged out on the console when this code rus? Why?
@@ -159,6 +167,7 @@ const num3 = 20
 
 myFunction(num3, num1)
 ```
+The code calls myFunction function and passes two arguments. Howevew when we are calling this function we are substituting num1 to num3. Result value will be 20.
 
 ### Q10
 What will be logged out on the console when this code runs? Why?
@@ -174,6 +183,7 @@ const num3 = 20
 
 myFunction(num3, num1, 100)
 ```
+The code calls myFunction function and passes three arguments. Howevew when we are calling this function we are substituting num3 with 100. Rusult value will be 100.
 
 ### Q11
 What will be the value of `result` when this code runs? Why?
@@ -189,7 +199,7 @@ const num3 = 20
 
 const result = myFunction(1, 1, 1)
 ```
-
+The code calls myFunction function and passes three arguments. Howevew when we are calling this function we are substituting each argument with number 1. Result value will be 3. (1+1+1)
 ### Q12
 What will be the value of `result` when this code runs? Why?
 
@@ -205,7 +215,8 @@ function myFunction(num1) {
 
 const result = myFunction(5)
 ```
-
+This is a nested function. First one to run is function called getSomeValue.  num is equel to result of this function. It is 2 as specified in the return command. 
+myFunction function  substituting num1 with number 5. In this case this function will return result 10 (5*2)
 ### Q13
 What will be the value of `result` when this code runs? Why?
 
