@@ -215,7 +215,7 @@ function myFunction(num1) {
 
 const result = myFunction(5)
 ```
-This is a nested function. First one to run is function called getSomeValue.  num is equel to result of this function. It is 2 as specified in the return command. 
+This is a nested function. First one to run is function called getSomeValue.  num is equel to result of this function. It is 2 as specified in the return command.
 myFunction function  substituting num1 with number 5. In this case this function will return result 10 (5*2)
 ### Q13
 What will be the value of `result` when this code runs? Why?
